@@ -5,7 +5,7 @@ def join_nested_strings(src)
     inner_count=0
 
     while inner_count<src[outer_count].count do
-      if src[outer_count][inner_count].str?
+      if src[outer_count][inner_count]
         new_string.push(src[outer_count][inner_count].join(" "))
     end
     inner_count+=1
