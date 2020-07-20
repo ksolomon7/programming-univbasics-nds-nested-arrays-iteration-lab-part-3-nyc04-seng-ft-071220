@@ -3,10 +3,10 @@ def join_nested_strings(src)
   outer_count=0
   while outer_count<src.count do
     inner_count=0
-
+    string_joining=" "
     while inner_count<src[outer_count].count do
       if src[outer_count][inner_count]
-        new_string.push(src[outer_count][inner_count].join(" "))
+        new_string.join(src[outer_count][inner_count])
     end
     inner_count+=1
   end
