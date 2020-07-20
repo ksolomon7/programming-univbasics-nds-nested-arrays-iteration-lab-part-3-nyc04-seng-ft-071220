@@ -6,7 +6,7 @@ def join_nested_strings(src)
     while inner_count<src[outer_count].count do
       if src[outer_count][inner_count].class==String
         p src[outer_count][inner_count]
-    end
+      end
     inner_count+=1
   end
   outer_count+=1
